@@ -55,7 +55,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="min-h-screen flex items-center mt-4 lg:mt-8 -mb-8"
+      className="min-h-screen flex items-center mt-4 lg:mt-8"
     >
       <div className="mx-auto flex flex-col justify-center items-center">
         <motion.div
@@ -65,7 +65,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="text-center"
         >
-          <h2 className="h2 text-accent">
+          <h2 className="h2 -mb-6 mt-6 text-accent">
             My <span className="text-gradient">Skill-set</span>
           </h2>
           <h3 className="h3 mb-12">
