@@ -15,9 +15,7 @@ const Project3 = () => {
             <h1 className="text-5xl font-bold text-gradient">BD Chef Recipe World</h1>
             <div className="mb-8">
               <p className="py-6">
-                This is a website to promotes our culture & food heritage. You can check
-                out our special sports events to utilize this summer time at its
-                best.
+                This is a website to promotes our culture & food heritage. You can contact our professional chefs for any of your social occasion or festival caterings.
               </p>
               <p>
                 Key Features:

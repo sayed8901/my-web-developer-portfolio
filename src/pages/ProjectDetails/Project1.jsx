@@ -14,9 +14,7 @@ const Project1 = () => {
             <h1 className="text-5xl font-bold text-gradient">Summer Champ</h1>
             <div className="mb-8">
               <p className="py-6">
-                This is a summer time school sports camping site. You can check
-                out our special sports events to utilize this summer time at its
-                best.
+                This is a summer time school sports camping site. You can check out our special sports events to utilize this summer time at its best.
               </p>
               <p>
                 Key Features:

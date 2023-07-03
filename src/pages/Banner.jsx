@@ -2,9 +2,6 @@
 // import Image from "../assets/avatar.svg";
 import Image from "../assets/Hero-image 2.jpg";
 
-// icons
-import { HiOutlineMail } from "react-icons/hi";
-import { BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
 
 // typing animation
 import { TypeAnimation } from "react-type-animation";
@@ -14,12 +11,16 @@ import { motion } from "framer-motion";
 
 // variants    // used for scroll animation
 import { fadeIn } from "../variants";
-import SocialLinks from "../components/SocialLinks";
+import AnimatedSocialLinks from "../components/AnimatedSocialLinks";
+
 
 // importing resume from public folder
 import resume from "/resume.pdf";
 
 import { Link } from "react-scroll";
+import SocialLinks from "../components/SocialLinks";
+
+
 
 const Banner = () => {
   return (
@@ -104,40 +105,13 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="lg:hidden flex text-[25px] gap-x-12 max-w-max mx-auto md:mx-0"
+            className="lg:hidden"
           >
-            <a
-              href="https://www.linkedin.com/in/md-sayed-hossain-24297315a"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <BsLinkedin />
-            </a>
-            <a
-              href="http://github.com/sayed8901"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <BsGithub />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100010385951866"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <BsFacebook />
-            </a>
-            <a
-              href="mailto: sayed91515@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <HiOutlineMail />
-            </a>
+            <SocialLinks ></SocialLinks>
           </motion.div>
         </div>
 
-        {/* image & socials */}
+        {/* image with socials */}
         <motion.div
           variants={fadeIn("down", 0.5)}
           initial="hidden"
@@ -148,11 +122,11 @@ const Banner = () => {
           <div className="flex">
             <img
               src={Image}
-              className="w-48 mt-16 sm:mt-0 sm:w-96 rounded-3xl mx-auto z-50"
+              className="w-48 mt-16 sm:mt-0 sm:w-96 rounded-3xl mx-auto z-20"
               alt=""
             />
           </div>
-          <SocialLinks></SocialLinks>
+          <AnimatedSocialLinks></AnimatedSocialLinks>
         </motion.div>
       </div>
     </section>

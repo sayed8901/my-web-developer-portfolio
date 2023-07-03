@@ -29,13 +29,12 @@ const Projects = () => {
             Latest <span className="text-gradient">Works</span>
           </h2>
           <p className="my-4 lg:my-8 text-sm lg:text-xl leading-none lg:leading-normal">
-            I am always enthusiastic about learning new tech and also try to
-            implement them in my recent projects.{" "}
+            I am always enthusiastic about learning new tech and also try to implement them in my recent projects.
           </p>
 
           <a
-            href="https://www.facebook.com/profile.php?id=100010385951866"
-            className="button btn-sm xl:btn-lg flex items-center justify-center w-44"
+            href="https://github.com/sayed8901?tab=repositories"
+            className="button btn-sm xl:btn-lg flex items-center justify-center w-56 mx-auto md:mx-0 mb-4"
             rel="noreferrer"
             target="_blank"
           >
