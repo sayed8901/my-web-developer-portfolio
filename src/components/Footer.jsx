@@ -11,7 +11,7 @@ import { fadeIn } from "../variants";
 const Footer = () => {
   return (
     <footer
-      className={`grid grid-cols-3 items-center justify-between gap-6 sm:gap-12 text-center sticky top-[100vh] pb-4`}
+      className={`grid grid-cols-3 items-center justify-between gap-6 sm:gap-12 text-center sticky top-[100vh] mb-4 mt-8`}
     >
       <div className="items-center">
         <div className="flex items-center justify-center mx-auto">
