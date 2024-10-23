@@ -71,8 +71,7 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="text-sm xl:text-base mb-2 lg:mb-8 max-w-2xl mx-auto md:mx-0 lg:max-w-lg xl:max-w-xl"
           >
-            Hello! I am Sayed from Narayanganj. I have a deep passion for web
-            development. It gives me much thrill & allows me to apply my
+            Hello! I am Sayed from Narayanganj. I have a deep passion for software engineering sector. It gives me much thrill & allows me to apply my
             creativity throughout my work.
           </motion.p>
           <motion.div
