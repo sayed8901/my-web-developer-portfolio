@@ -4,46 +4,46 @@ import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
 
-const Education = () => {
-   const educationData = [
-     {
-       id: 1,
-       title: "Bachelor of Business Administration (BBA) in Management",
-       institution: "National University",
-       year: "2009 - 2013",
-       result: "3.13 out of 4.00",
-       style: "shadow-blue-400",
-     },
-     {
-       id: 2,
-       title: "Master of Business Administration (MBA) in Management",
-       institution: "National University",
-       year: "2013 - 2014",
-       result: "3.11 out of 4.00",
-       style: "shadow-green-600",
-     },
-   ];
+const EducationAndCourses = () => {
+  const educationData = [
+    {
+      id: 1,
+      title: "Bachelor of Business Administration (BBA) in Management",
+      institution: "National University",
+      year: "2009 - 2013",
+      result: "3.13 out of 4.00",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 2,
+      title: "Master of Business Administration (MBA) in Management",
+      institution: "National University",
+      year: "2013 - 2014",
+      result: "3.11 out of 4.00",
+      style: "shadow-green-600",
+    },
+  ];
 
-   const coursesData = [
-     {
-       id: 1,
-       title: "CS fundamentals with Phitron",
-       institution: "Phitron",
-       year: "2023 - 2024",
-       result: "Successfully Completed",
-       topics: "C, C++, Python, Django, DRF, Data Structure & Algorithms",
-       style: "shadow-orange-500",
-     },
-     {
-       id: 2,
-       title: "Complete Web Development Course",
-       institution: "Programming Hero",
-       year: "2022 - 2023",
-       result: "Successfully Completed",
-       topics: "HTML, CSS, bootstrap, Tailwind, JavaScript, React, NextJS",
-       style: "shadow-yellow-500",
-     },
-   ];
+  const coursesData = [
+    {
+      id: 1,
+      title: "CS fundamentals with Phitron",
+      institution: "Phitron",
+      year: "2023 - 2024",
+      result: "Successfully Completed",
+      topics: "C, C++, Python, Django, DRF, Data Structure & Algorithms",
+      style: "shadow-orange-500",
+    },
+    {
+      id: 2,
+      title: "Complete Web Development Course",
+      institution: "Programming Hero",
+      year: "2022 - 2023",
+      result: "Successfully Completed",
+      topics: "HTML, CSS, bootstrap, Tailwind, JavaScript, React, NextJS",
+      style: "shadow-yellow-500",
+    },
+  ];
 
   return (
     <div name="education" className="min-h-screen hero pt-16 flex items-center">
@@ -113,4 +113,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default EducationAndCourses;
