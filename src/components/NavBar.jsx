@@ -80,7 +80,7 @@ const NavBar = () => {
         </div>
 
         <Link
-          to="home"
+          to="intro"
           smooth
           duration={500}
           className="btn btn-ghost normal-case text-xl ml-[-12px] lg:ml-[-48px]"

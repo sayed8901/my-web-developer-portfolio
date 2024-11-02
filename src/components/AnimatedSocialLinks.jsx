@@ -1,4 +1,3 @@
-
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
@@ -47,10 +46,14 @@ const AnimatedSocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col absolute top-[12%] xl:top-[20%] -left-[76px] z-0">
       <ul>
-        {links.map(({id, child, href, style}) => (
+        {links.map(({ id, child, href, style }) => (
           <li
             key={id}
-            className={"flex justify-between items-center w-44 h-14 px-4 glass hover:ml-[-70px] hover:rounded-xl duration-300" + " " + style}
+            className={
+              "flex justify-between items-center w-44 h-14 px-4 glass hover:ml-[-70px] hover:rounded-xl duration-300" +
+              " " +
+              style
+            }
           >
             <a
               href={href}

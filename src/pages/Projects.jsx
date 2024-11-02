@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 // images
-import Img1 from "../assets/project-images/Project-1-Summer-Champ.jpg";
-import Img2 from "../assets/project-images/Project-2-ToyDoll-FairyWorld.jpg";
-import Img3 from "../assets/project-images/Project-3-BD-Chef_RecipeWorld.jpg";
+import summer_champ_cover from "../assets/project-images/summer_champ/cover_img.jpg";
+import hr_corp_cover from "../assets/project-images/hr_corp/cover_img.jpg";
+import bd_job_portal_cover from "../assets/project-images/bd_job_portal/cover_img.jpg";
+import easy_shop_cover from "../assets/project-images/easy_shop/cover_img.jpg";
+import book_bug_cover from "../assets/project-images/book_bug/cover_img.jpg";
+
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -38,7 +41,7 @@ const Projects = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="text-center md:text-left"
           >
-            <p className="mb-4 lg:mb-8 text-sm md:text-lg xl:text-xl leading-none lg:leading-tight">
+            <p className="mb-4 lg:mb-6 text-sm md:text-lg xl:text-xl leading-none lg:leading-tight">
               I am always enthusiastic about learning new tech and also try to
               implement them my recent projects. <br /> You can check out my
               latest works.
@@ -54,7 +57,7 @@ const Projects = () => {
             </a>
           </motion.div>
 
-          {/* project 1 */}
+          {/* project 1 : HRCorp */}
           <motion.div
             variants={fadeIn("left", 0.3)}
             initial="hidden"
@@ -67,7 +70,85 @@ const Projects = () => {
             {/* img */}
             <img
               className="group-hover:scale-125 transition-all duration-500"
-              src={Img1}
+              src={hr_corp_cover}
+              alt=""
+            />
+
+            <div>
+              <div>
+                {/* pre-title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
+                  <span className="text-gradient">HRCorp ERP</span>
+                </div>
+                {/* title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
+                  <span className="text-sm xl:text-xl text-white">
+                    A complete HR management solution.
+                  </span>
+                </div>
+              </div>
+              <Link
+                to={"hr_corp"}
+                className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
+              >
+                View Details
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* project 2 : BD Job Portal */}
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
+          >
+            {/* overlay */}
+            <div className="group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
+            {/* img */}
+            <img
+              className="group-hover:scale-125 transition-all duration-500"
+              src={bd_job_portal_cover}
+              alt=""
+            />
+
+            <div>
+              <div>
+                {/* pre-title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
+                  <span className="text-gradient">BD Job Portal</span>
+                </div>
+                {/* title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
+                  <span className="text-sm xl:text-xl text-white">
+                    A job portal site with many job posts.
+                  </span>
+                </div>
+              </div>
+              <Link
+                to={"bd_job_portal"}
+                className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
+              >
+                View Details
+              </Link>
+            </div>
+          </motion.div>
+
+          {/* project 3 : summer champ */}
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
+          >
+            {/* overlay */}
+            <div className="group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
+            {/* img */}
+            <img
+              className="group-hover:scale-125 transition-all duration-500"
+              src={summer_champ_cover}
               alt=""
             />
 
@@ -85,7 +166,7 @@ const Projects = () => {
                 </div>
               </div>
               <Link
-                to={"project1"}
+                to={"summer_champ"}
                 className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
               >
                 View Details
@@ -93,9 +174,9 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* project 2 */}
+          {/* project 4 : book bug library management site */}
           <motion.div
-            variants={fadeIn("left", 0.4)}
+            variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -106,7 +187,7 @@ const Projects = () => {
             {/* img */}
             <img
               className="group-hover:scale-125 transition-all duration-500"
-              src={Img2}
+              src={book_bug_cover}
               alt=""
             />
 
@@ -114,17 +195,17 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">Toy Doll Fairy World</span>
+                  <span className="text-gradient">BookBug</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
                   <span className="text-sm xl:text-xl text-white">
-                    A website to find lovely toys for kids.
+                    A complete library management site.
                   </span>
                 </div>
               </div>
               <Link
-                to={"project2"}
+                to={"book_bug"}
                 className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
               >
                 View Details
@@ -132,9 +213,9 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* project 3 */}
+          {/* project 5 : easy shop */}
           <motion.div
-            variants={fadeIn("left", 0.5)}
+            variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -145,7 +226,7 @@ const Projects = () => {
             {/* img */}
             <img
               className="group-hover:scale-125 transition-all duration-500"
-              src={Img3}
+              src={easy_shop_cover}
               alt=""
             />
 
@@ -153,95 +234,17 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">BD Chef Recipe World</span>
+                  <span className="text-gradient">Easy Shop</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
                   <span className="text-sm xl:text-xl text-white">
-                    Promotes our culture & food heritage.
+                    An e-commerce shopping site.
                   </span>
                 </div>
               </div>
               <Link
-                to={"project3"}
-                className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
-              >
-                View Details
-              </Link>
-            </div>
-          </motion.div>
-
-          {/* project 4 */}
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
-          >
-            {/* overlay */}
-            <div className="group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
-            {/* img */}
-            <img
-              className="group-hover:scale-125 transition-all duration-500"
-              src={Img3}
-              alt=""
-            />
-
-            <div>
-              <div>
-                {/* pre-title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">BD Chef Recipe World</span>
-                </div>
-                {/* title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
-                  <span className="text-sm xl:text-xl text-white">
-                    Promotes our culture & food heritage.
-                  </span>
-                </div>
-              </div>
-              <Link
-                to={"project3"}
-                className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
-              >
-                View Details
-              </Link>
-            </div>
-          </motion.div>
-
-          {/* project 5 */}
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="group relative overflow-hidden border-2 border-white/50 rounded-xl"
-          >
-            {/* overlay */}
-            <div className="group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300"></div>
-            {/* img */}
-            <img
-              className="group-hover:scale-125 transition-all duration-500"
-              src={Img3}
-              alt=""
-            />
-
-            <div>
-              <div>
-                {/* pre-title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">BD Chef Recipe World</span>
-                </div>
-                {/* title */}
-                <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
-                  <span className="text-sm xl:text-xl text-white">
-                    Promotes our culture & food heritage.
-                  </span>
-                </div>
-              </div>
-              <Link
-                to={"project3"}
+                to={"easy_shop"}
                 className="absolute -bottom-full right-12 group-hover:bottom-4 transition-all duration-500 z-50 button btn-sm"
               >
                 View Details

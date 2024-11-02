@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 // variants    // used for scroll animation
 import { fadeIn } from "../variants";
 
-
 const Footer = () => {
   return (
     <footer
@@ -16,7 +15,7 @@ const Footer = () => {
       <div className="items-center">
         <div className="flex items-center justify-center mx-auto">
           <Link
-            to="home"
+            to="intro"
             smooth
             duration={500}
             className="mx-auto normal-case text-base md:text-2xl xl:text-3xl font-bold text-gradient mb-4 cursor-pointer"
@@ -33,13 +32,13 @@ const Footer = () => {
       <div className="items-center">
         {/* socials */}
         <motion.div
-            variants={fadeIn("down", 0.7)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-          >
-            <SocialLinks></SocialLinks>
-          </motion.div>
+          variants={fadeIn("down", 0.7)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+        >
+          <SocialLinks></SocialLinks>
+        </motion.div>
       </div>
 
       <div className="items-center">

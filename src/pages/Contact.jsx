@@ -108,7 +108,7 @@ const Contact = () => {
             />
             <textarea
               name="message"
-              rows="3"
+              rows="2"
               required
               placeholder="Enter Your Message"
               className="px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"

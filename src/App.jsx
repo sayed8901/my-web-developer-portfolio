@@ -8,7 +8,6 @@ import EducationAndCourses from "./pages/EducationAndCourses";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
-
 function App() {
   return (
     <div className="site-bg-color bg-no-repeat bg-cover overflow-hidden">
