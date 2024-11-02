@@ -11,7 +11,7 @@ const AnimatedSocialLinks = () => {
           <BsLinkedin size={30} /> LinkedIn
         </>
       ),
-      href: "https://www.linkedin.com/in/md-sayed-hossain-24297315a",
+      href: "https://www.linkedin.com/in/sayed8901/",
       style: "rounded-tl-xl",
     },
     {
@@ -30,7 +30,7 @@ const AnimatedSocialLinks = () => {
           <BsFacebook size={30} /> Facebook
         </>
       ),
-      href: "https://www.facebook.com/profile.php?id=100010385951866"
+      href: "https://www.facebook.com/profile.php?id=100010385951866",
     },
     {
       id: 3,

@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 // variant
 import { fadeIn } from "../variants";
 
-
 // countup
 import CountUp from "react-countup";
 
@@ -19,12 +18,15 @@ const About = () => {
     threshold: 0.5,
   });
 
-
   return (
-    <section className="min-h-screen flex items-center mt-4 lg:mt-8" name="about" ref={ref}>
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-6 md:gap-x-10 items-center">
-          {/* img */}
-          <motion.div
+    <section
+      className="min-h-screen flex items-center my-20"
+      name="about"
+      ref={ref}
+    >
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-6 md:gap-x-10 items-center">
+        {/* img */}
+        <motion.div
           variants={fadeIn("down", 0.5)}
           initial="hidden"
           whileInView={"show"}
@@ -37,52 +39,59 @@ const About = () => {
           />
         </motion.div>
 
-          {/* text */}
-          <motion.div
-            variants={fadeIn("left", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="md:col-span-2"
-          >
-            <h2 className="h2 text-accent">
-              <span className="text-gradient">About</span> me
-            </h2>
-            <h3 className="h3 mb-4">I have completed more than 20 projects.</h3>
-            <p className="mb-6 lg:mb-12 leading-normal">
-              Among them, I have made some e-commerce sites, a job portal, a
-              newspaper site, some portfolio sites, and many more.
-            </p>
+        {/* text */}
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="md:col-span-2"
+        >
+          <h2 className="h2 text-accent mt-4">
+            <span className="text-gradient">About</span> me
+          </h2>
 
-            {/* stats */}
-            <div className="flex gap-x-6 md:gap-x-10">
-              <div>
-                <div className="text-[40px] font-secondary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={20} duration={3} /> : null}+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Projects <br /> Completed
-                </div>
+          <p className="my-4 lg:my-8 leading-tight text-base sm:text-sm lg:text-xl">
+            I have completed MBA in Management. I have a deep passion to start
+            my career in the software engineering sector. I have adequate
+            knowledge of C, C++, Data structure and Algorithm, Python, Django,
+            DRF and some database tools like SQL, postgreSQL, superbase, etc. I
+            also have enough knowledge on HTML, CSS, Bootstrap, Tailwind,
+            Responsive design, JavaScript, React.js & many more.
+            <br />I have completed more than 10 projects. Among them, I have
+            created an HR ERP project, a job portal site, a summer school
+            camping site, and some others.
+          </p>
+
+          {/* stats */}
+          <div className="flex gap-x-6 md:gap-x-10">
+            <div>
+              <div className="text-[40px] font-secondary text-gradient mb-2">
+                {inView ? <CountUp start={0} end={10} duration={3} /> : null}+
               </div>
-              <div>
-                <div className="text-[40px] font-secondary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={50} duration={4} /> : null}+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Tasks <br /> Done
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-secondary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={12} duration={5} /> : null}+
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Assignments <br /> Submitted
-                </div>
+              <div className="font-primary text-sm tracking-[2px]">
+                Projects <br /> Completed
               </div>
             </div>
-          </motion.div>
-        </div>
+            <div>
+              <div className="text-[40px] font-secondary text-gradient mb-2">
+                {inView ? <CountUp start={0} end={20} duration={4} /> : null}+
+              </div>
+              <div className="font-primary text-sm tracking-[2px]">
+                Tasks <br /> Done
+              </div>
+            </div>
+            <div>
+              <div className="text-[40px] font-secondary text-gradient mb-2">
+                {inView ? <CountUp start={0} end={15} duration={5} /> : null}+
+              </div>
+              <div className="font-primary text-sm tracking-[2px]">
+                Assignments <br /> Submitted
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 };

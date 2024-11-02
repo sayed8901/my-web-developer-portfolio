@@ -6,10 +6,7 @@ import { fadeIn } from "../variants";
 
 const Contact = () => {
   return (
-    <div
-      name="contact"
-      className="min-h-screen flex items-center mt-4 lg:mt-8 pt-16"
-    >
+    <div name="contact" className="min-h-screen flex items-center py-20">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-x-6 md:gap-x-10 items-center">
         <motion.div
           variants={fadeIn("down", 0.3)}

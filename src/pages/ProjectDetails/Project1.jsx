@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import img1 from "../../assets/Project-1.1.jpg";
-import img2 from "../../assets/Project-1.2.jpg";
-import img3 from "../../assets/Project-1.3.jpg";
-import img4 from "../../assets/Project-1.4.jpg";
+import img1 from "../../assets/project-images/Project-1.1.jpg";
+import img2 from "../../assets/project-images/Project-1.2.jpg";
+import img3 from "../../assets/project-images/Project-1.3.jpg";
+import img4 from "../../assets/project-images/Project-1.4.jpg";
 import Marquee from "react-fast-marquee";
 
 const Project1 = () => {

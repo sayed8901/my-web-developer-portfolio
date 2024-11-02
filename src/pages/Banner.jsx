@@ -26,7 +26,7 @@ const Banner = () => {
   return (
     <section
       className="min-h-screen flex items-center mt-4 lg:mt-8"
-      name="home"
+      name="intro"
     >
       <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-8 md:gap-x-12 items-center">
         {/* text */}
@@ -36,9 +36,10 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className=" text-[40px] font-bold leading-[0.8] md:text-[55px] xl:text-[90px]"
+            className="text-[40px] font-bold leading-[0.8] md:text-[55px] xl:text-[90px]"
           >
-            <span className="text-gradient font-secondary">Sayed</span> Hossain
+            <span className="text-gradient font-secondary">Md. Sayed</span>{" "}
+            Hossain
           </motion.h1>
 
           <motion.div
@@ -46,7 +47,7 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="mb-2 lg:mb-6 text-[30px] md:text-[35px] xl:text-[60px] font-secondary font-semibold uppercase leading-[2]"
+            className="mb-2 lg:mb-6 text-[28px] md:text-[36px] xl:text-[56px] font-secondary font-semibold uppercase leading-[2]"
           >
             <span className="text-white mr-2">I am a </span>
             <TypeAnimation
@@ -56,6 +57,8 @@ const Banner = () => {
                 "Designer ",
                 2000,
                 "Programmer ",
+                2000,
+                "Software Engineer ",
                 2000,
               ]}
               speed={50}
@@ -69,17 +72,18 @@ const Banner = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-sm xl:text-base mb-2 lg:mb-8 max-w-2xl mx-auto md:mx-0 lg:max-w-lg xl:max-w-xl"
+            className="leading-tight mb-2 lg:mb-8 max-w-2xl mx-auto md:mx-0 lg:max-w-lg xl:max-w-xl text-base sm:text-sm lg:text-xl"
           >
-            Hello! I am Sayed from Narayanganj. I have a deep passion for software engineering sector. It gives me much thrill & allows me to apply my
-            creativity throughout my work.
+            Hello! I am Sayed from Narayanganj. I have a deep passion for
+            software engineering sector. It gives me much thrill & allows me to
+            apply my creativity throughout my work.
           </motion.p>
           <motion.div
             variants={fadeIn("up", 0.6)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="flex max-w-max gap-x-6 items-center mx-auto md:mx-0 my-6 xl:my-12"
+            className="flex max-w-max gap-x-6 items-center mx-auto md:mx-0 my-4 xl:my-8"
           >
             <a
               className="button btn-sm xl:btn-lg flex items-center justify-center"
@@ -106,7 +110,7 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="lg:hidden"
           >
-            <SocialLinks ></SocialLinks>
+            <SocialLinks></SocialLinks>
           </motion.div>
         </div>
 

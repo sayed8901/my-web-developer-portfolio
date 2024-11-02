@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import logo from "/front_page-icon.png";
 
 // importing resume from public folder
 import resume from "/resume.pdf";
@@ -10,7 +11,7 @@ const NavBar = () => {
   const navItems = [
     {
       id: 1,
-      link: "home",
+      link: "intro",
     },
     {
       id: 2,
@@ -31,7 +32,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="my-container navbar fixed top-0 z-50 rounded-md glass h-10">
+    <div className="my-container navbar fixed top-0 z-50 rounded-md glass h-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -80,12 +81,15 @@ const NavBar = () => {
           duration={500}
           className="btn btn-ghost normal-case text-xl ml-[-12px] lg:ml-[-48px]"
         >
-          <h1 className="text-[30px] font-bold leading-[0.8]">
-            <span className="text-gradient">Sayed</span>
-          </h1>
+          <div className="flex justify-center items-center gap-4">
+            <img className="hidden sm:inline w-10" src={logo} alt="" />
+            <h1 className="text-[30px] font-bold leading-[0.8]">
+              <span className="text-gradient">Sayed</span>
+            </h1>
+          </div>
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center mr-[10%] hidden lg:flex">
         <ul className="hidden md:flex">
           {navItems.map((navItem) => (
             <li
