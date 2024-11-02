@@ -20,7 +20,7 @@ const About = () => {
 
   return (
     <section
-      className="min-h-screen flex items-center my-20"
+      className="min-h-screen hero pt-16 flex items-center"
       name="about"
       ref={ref}
     >
@@ -47,7 +47,7 @@ const About = () => {
           viewport={{ once: false, amount: 0.7 }}
           className="md:col-span-2"
         >
-          <h2 className="h2 text-accent mt-4">
+          <h2 className="h2 text-accent mb-8">
             <span className="text-gradient">About</span> me
           </h2>
 
@@ -58,7 +58,7 @@ const About = () => {
             DRF and some database tools like SQL, postgreSQL, superbase, etc. I
             also have enough knowledge on HTML, CSS, Bootstrap, Tailwind,
             Responsive design, JavaScript, React.js & many more.
-            <br />I have completed more than 10 projects. Among them, I have
+            <br />I have completed some exciting projects. Among them, I have
             created an HR ERP project, a job portal site, a summer school
             camping site, and some others.
           </p>

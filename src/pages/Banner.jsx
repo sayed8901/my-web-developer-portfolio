@@ -25,7 +25,7 @@ import SocialLinks from "../components/SocialLinks";
 const Banner = () => {
   return (
     <section
-      className="min-h-screen flex items-center mt-4 lg:mt-8"
+      className="min-h-screen hero pt-16 flex items-center"
       name="intro"
     >
       <div className="mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-8 md:gap-x-12 items-center">
@@ -74,7 +74,7 @@ const Banner = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="leading-tight mb-2 lg:mb-8 max-w-2xl mx-auto md:mx-0 lg:max-w-lg xl:max-w-xl text-base sm:text-sm lg:text-xl"
           >
-            Hello! I am Sayed from Narayanganj. I have a deep passion for
+            Hello! This is Sayed from Bangladesh. I have a deep passion for
             software engineering sector. It gives me much thrill & allows me to
             apply my creativity throughout my work.
           </motion.p>

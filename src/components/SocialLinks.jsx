@@ -5,7 +5,7 @@ import { BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
 
 const SocialLinks = () => {
     return (
-      <div className="flex text-[25px] justify-between max-w-xs mx-auto md:mx-0">
+      <div className="flex text-[25px] justify-between gap-4 max-w-xs mx-auto md:mx-0">
         <a
           href="https://www.linkedin.com/in/sayed8901/"
           rel="noreferrer"

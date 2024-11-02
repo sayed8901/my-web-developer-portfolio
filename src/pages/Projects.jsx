@@ -13,13 +13,22 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <section
-      className="min-h-screen flex items-center py-20"
+      className="min-h-screen hero pt-16 flex items-center"
       name="projects"
     >
       <div>
-        <h2 className="h2 text-accent text-center">
-          Latest <span className="text-gradient">Works</span>
-        </h2>
+        <motion.div
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-center"
+        >
+          <h2 className="h2 text-accent mb-8">
+            Latest <span className="text-gradient">Works</span>
+          </h2>
+        </motion.div>
+
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 md:gap-y-6 lg:gap-y-8 lg:mt-12">
           {/* Section info */}
           <motion.div
@@ -31,7 +40,8 @@ const Projects = () => {
           >
             <p className="mb-4 lg:mb-8 text-sm md:text-lg xl:text-xl leading-none lg:leading-tight">
               I am always enthusiastic about learning new tech and also try to
-              implement them my recent projects. <br /> You can check out my latest works.
+              implement them my recent projects. <br /> You can check out my
+              latest works.
             </p>
 
             <a

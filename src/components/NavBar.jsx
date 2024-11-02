@@ -19,14 +19,18 @@ const NavBar = () => {
     },
     {
       id: 3,
-      link: "skills",
+      link: "education",
     },
     {
       id: 4,
-      link: "projects",
+      link: "skills",
     },
     {
       id: 5,
+      link: "projects",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
@@ -54,12 +58,12 @@ const NavBar = () => {
           {/* Nav manus for mobile device */}
           <ul
             tabIndex={0}
-            className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow site-bg-color bg-no-repeat bg-cover overflow-hidden rounded-box w-36"
+            className="menu-sm dropdown-content mt-2 z-[1] p-2 shadow site-bg-color bg-no-repeat bg-cover overflow-hidden rounded-box w-36"
           >
             {navItems.map((navItem) => (
               <li
                 key={navItem.id}
-                className="px-4 cursor-pointer capitalize py-3 text-4xl hover:text-gradient"
+                className="px-4 cursor-pointer capitalize py-1 md:py-2 text-4xl hover:text-gradient"
               >
                 {/* for react smooth scroll */}
                 <Link
