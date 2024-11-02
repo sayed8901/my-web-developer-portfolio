@@ -78,7 +78,7 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">HRCorp ERP</span>
+                  <span className="text-gradient text-2xl">HRCorp ERP</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
@@ -117,7 +117,7 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">BD Job Portal</span>
+                  <span className="text-gradient text-2xl">BD Job Portal</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
@@ -156,12 +156,12 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">Summer Champ</span>
+                  <span className="text-gradient text-2xl">Summer Champ</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
                   <span className="text-sm xl:text-xl text-white">
-                    A school sports summer camping site.
+                    School sports summer camping site.
                   </span>
                 </div>
               </div>
@@ -195,7 +195,7 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">BookBug</span>
+                  <span className="text-gradient text-2xl">BookBug</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
@@ -234,7 +234,7 @@ const Projects = () => {
               <div>
                 {/* pre-title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-300 z-20">
-                  <span className="text-gradient">Easy Shop</span>
+                  <span className="text-gradient text-2xl">Easy Shop</span>
                 </div>
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-16 transition-all duration-700 z-20">
