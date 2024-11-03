@@ -42,7 +42,7 @@ const BookBug = () => {
                     * Frontend: Django MVT, TailwindCSS
                   </li>
                   <li className="leading-tight text-base">
-                    * Database: PostgreSQL, Supabase
+                    * Database: sqlite3, onRender
                   </li>
                 </ul>
               </div>
@@ -51,7 +51,7 @@ const BookBug = () => {
             <div className="flex flex-col justify-around items-center gap-8">
               <div className="flex justify-center items-center gap-8">
                 <a
-                  href="https://github.com/sayed8901/HRCorp_HR_ERP_project"
+                  href="https://github.com/sayed8901/library_management_project/tree/main/core"
                   className="cursor-pointer leading-tight"
                   rel="noreferrer"
                   target="_blank"
@@ -59,7 +59,7 @@ const BookBug = () => {
                   <span className="text-gradient">Front-end</span> code link
                 </a>
                 <a
-                  href="https://hrcorp.netlify.app"
+                  href="https://library-management-project-ofav.onrender.com"
                   className="button btn-sm xl:btn-lg flex items-center justify-center w-32"
                   rel="noreferrer"
                   target="_blank"
@@ -67,7 +67,7 @@ const BookBug = () => {
                   Go Live
                 </a>
                 <a
-                  href="https://github.com/sayed8901/HRCorp_system_DRF_backend"
+                  href="https://github.com/sayed8901/library_management_project"
                   className="cursor-pointer leading-tight"
                   rel="noreferrer"
                   target="_blank"
