@@ -92,26 +92,28 @@ const Contact = () => {
             method="POST"
             className="flex flex-col w-full"
           >
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Enter Your Name"
-              className="px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Enter Your Email"
-              className="my-4 px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
-            />
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Enter Your Name"
+                className="flex-1 px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Enter Your Email"
+                className="flex-1 px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
+              />
+            </div>
             <textarea
               name="message"
               rows="2"
               required
               placeholder="Enter Your Message"
-              className="px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
+              className="mt-4 px-2 bg-transparent border-2 rounded-lg text-white focus:outline-none"
             ></textarea>
 
             <div className="flex mx-auto my-4">
